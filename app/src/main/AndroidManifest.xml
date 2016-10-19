@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="chang.stickermaker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="表情飙"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MakerActivity" ></activity>
+        <activity android:name=".MyStickersActivity"></activity>
+        <activity android:name=".FrameLibActivity" android:label="轮廓库"></activity>
+        <activity android:name=".FaceLibActivity"></activity>
+        <activity android:name=".ItemLibActivity"></activity>
+    </application>
+
+</manifest>

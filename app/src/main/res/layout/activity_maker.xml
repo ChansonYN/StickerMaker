@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/background_clean">
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btn_frame"
+            android:src="@drawable/frame_button"
+            android:background="#00000000"
+            android:layout_above="@+id/img_btn_face"
+            android:layout_alignStart="@+id/img_btn_face" />
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btn_face"
+            android:src="@drawable/face_button"
+            android:background="#00000000"
+            android:layout_above="@+id/imgview_maker"
+            android:layout_alignStart="@+id/imgview_maker" />
+
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btn_item"
+            android:src="@drawable/item_button"
+            android:background="#00000000"
+            android:layout_above="@+id/img_btn_word"
+            android:layout_alignStart="@+id/img_btn_word" />
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btn_word"
+            android:src="@drawable/add_word_button"
+            android:background="#00000000"
+            android:layout_above="@+id/imgview_maker"
+            android:layout_alignEnd="@+id/imgview_maker" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_btn_save"
+        android:src="@drawable/save_button"
+        android:background="#00000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#FFF"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:id="@+id/imgview_maker"
+        android:src="@drawable/box"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
